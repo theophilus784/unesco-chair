@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNESCO Chair in Integrated Flood Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 text-gray-900 pt-24">
+    <!-- Fixed Header -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+      <nav class="container mx-auto px-2 md:px-4 py-3 flex items-center justify-between">
+        <!-- Left Section -->
+        <div class="flex items-center space-x-1">
+          <!-- Mobile Menu Toggle -->
+          <button type="button" id="mobile-menu-toggle" class="md:hidden block focus:outline-none z-50">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+
+          <img src="futminna.jpg" alt="FUT Minna Logo" class="h-16">
+          <div>
+            <h1 class="text-sm sm:text-base md:text-lg font-semibold">
+              UNESCO Chair in Integrated Flood Management
+            </h1>
+            <p class="text-xs sm:text-sm text-gray-600">
+              Federal University of Technology, Minna
+            </p>
+          </div>
+        </div>
+    
+        <!-- Right Section -->
+        <div class="flex items-center space-x-1 md:space-x-4">
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-4 items-center">
+            <a href="/" class="text-gray-800 hover:text-blue-600 transition-colors">Home</a>
+            <a href="/unesco-flood-management/index.html" class="text-gray-800 hover:text-blue-600 transition-colors">
+              Flood Management
+            </a>
+          </div>
+
+          <!-- UNESCO Logo (Always Visible) -->
+          <img src="unesco_chair.png" alt="UNESCO Logo" class="h-16 md:h-16">
+
+        </div>
+      </nav>
+    
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden absolute top-full left-0 w-full bg-white shadow-md hidden">
+        <div class="flex flex-col items-center py-4 space-y-4">
+          <a href="/" class="text-gray-800 hover:text-blue-600 transition-colors">Home</a>
+          <a href="/unesco-flood-management/index.html" class="text-gray-800 hover:text-blue-600 transition-colors">
+            Flood Management
+          </a>
+        </div>
+      </div>
+    </header>
+    
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Rest of the previous content remains the same, just with pt-24 added to body to account for fixed header -->
+    <main>
+        <!-- Carousel Section (from previous version) -->
+        <section class="relative">
+            <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                <!-- Carousel wrapper -->
+                <div class="relative h-screen overflow-hidden">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="image1.jpg" class="absolute block w-full h-full object-cover" alt="Slide 1">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                            <h1 class="text-white text-4xl font-bold text-center px-4">
+                                UNESCO Chair in Integrated Flood Management and Water Resources
+                            </h1>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="image2.jpg" class="absolute block w-full h-full object-cover" alt="Slide 2">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                            <h1 class="text-white text-4xl font-bold text-center px-4">
+                                Advancing Hydrological Research and Water Resource Management
+                            </h1>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="image3.jpg" class="absolute block w-full h-full object-cover" alt="Slide 3">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                            <h1 class="text-white text-4xl font-bold text-center px-4">
+                                Innovative Solutions for Flood Management
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slider controls -->
+                <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Rest of the previous sections (Background, Objectives, Team, Contact) remain unchanged -->
+        <!-- Background Section -->
+        <section class="py-20 bg-white text-gray-800 px-6 lg:px-20">
+            <h2 class="text-3xl font-semibold text-center mb-6">Background</h2>
+            <p class="text-lg leading-relaxed max-w-4xl mx-auto">
+                UNESCO established a Chair in Integrated Flood Management and Water Resources (March 2024 - June 2028) at Federal University of Technology, Minna, Nigeria under the leadership of the Chairholder, Professor O. D. Jimoh, who will contribute to advancing the strategy of the Intergovernmental Hydrological Programme (IHP) (2022 - 2029) on key water priority areas.
+            </p>
+        </section>
+
+        <!-- Objectives Section -->
+        <section class="py-20 bg-blue-600 text-white px-6 lg:px-20">
+            <h2 class="text-3xl font-semibold text-center mb-6">Objectives</h2>
+            <ul class="max-w-4xl mx-auto list-disc list-inside space-y-4 text-lg">
+                <li>Improve understanding of the hydrological system in the Niger Basin through research and publications.</li>
+                <li>Raise awareness on flood and water resource management via a web-based portal.</li>
+                <li>Develop a flood early warning system and a multi-hazard flood response strategy.</li>
+                <li>Train water scientists and managers through postgraduate programs and workshops.</li>
+                <li>Collaborate with UNESCO, other Chairs, and UNITWIN Networks on related initiatives.</li>
+            </ul>
+        </section>
+
+        <!-- Team Section -->
+        <section class="py-20 bg-white text-gray-800 px-6 lg:px-20">
+            <h2 class="text-3xl font-semibold text-center mb-6">Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center max-w-6xl mx-auto">
+                <div class="p-6 bg-gray-100 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold">Prof. O. D. Jimoh</h3>
+                    <p class="text-gray-600">Department of Civil Engineering (Chair)</p>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold">Prof. M. Y. Otache</h3>
+                    <p class="text-gray-600">Department of Agricultural and Bioresources Engineering</p>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold">Dr. A. R. Adesiji</h3>
+                    <p class="text-gray-600">Department of Civil Engineering</p>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold">Dr. Mary Odekunle</h3>
+                    <p class="text-gray-600">Department of Geography</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-20 bg-gray-800 text-white text-center px-6 lg:px-20">
+            <h2 class="text-3xl font-semibold mb-6">Contact</h2>
+            <div class="space-y-4">
+                <p class="text-lg">Prof. O. D. Jimoh</p>
+                <p class="text-lg">UNESCO Chair in Integrated Flood Management and Water Resources</p>
+                <div class="space-y-2">
+                    <p class="text-lg">
+                        <a href="mailto:odjimoh@futminna.edu.ng" class="underline hover:text-blue-300 transition-colors">
+                            odjimoh@futminna.edu.ng
+                        </a>
+                    </p>
+                    <p class="text-lg">
+                        <a href="mailto:odjimoh@gmail.com" class="underline hover:text-blue-300 transition-colors">
+                            odjimoh@gmail.com
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Flowbite JS for Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
